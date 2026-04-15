@@ -619,4 +619,415 @@ from operator import truediv
 # git config --global user.name "pm14p009"
 # git config --global user.email ("rashid@iuj.ac.jp")
 
-git status
+# git remote remove origin
+# git remote add origin https://github.com/pm14p009/Mohirdev_homeworks.git
+# git push -u origin main
+# git remote -v
+# git config --global http.proxy http://10.130.20.251:2002
+# git config --global https.proxy http://10.130.20.251:2002
+# git status
+# git push -u origin main
+# git config --global --list
+# git config --global http.sslVerify false
+# git push -u origin main
+
+
+
+# 14-python
+
+# otam (onam, akam, ukam, va hokazo) degan lug'at yarating va lug'atga shu inson haqida kamida 3 ta m'alumot kiriting (ismi, tu'gilgan yili, shahri, manzili va hokazo). Lug'atdagi ma'lumotni matn shaklida konsolga chiqaring: Otamning ismi Mavlutdin, 1954-yilda, Samarqand viloyatida tug'ilgan
+# Oila a'zolaringizning sevimli taomlari lug'atini tuzing. Lug'atda kamida 5 ta ism-taom jufltigi bo'lsin. Kamida uch kishining sevimli taomini konsolga chiqaring: Alining sevimli taomi osh
+# Python izohli lu'gati tuzing: Lug'atga shu kunga qadar o'rgangan 10 ta so'z (atamani) kiriting (masalan integer, float, string, if, else va hokazo) va har birining qisqacha tarjimasini yozing.
+# Foydalanuvchidan biror so'z kiritishni so'rang va so'zning tarjimasini yuqoridagi lug'atdan chiqarib bering. Agar so'z lu'gatda mavjud bo'lmasa, "Bunda so'z mavjud emas" degan xabarni chiqaring.
+# Yuqoridagi vazifani if-else yordamida qiling va natijani ham foydalanuvchiga tushunarli ko'rinishda chiqaring.
+
+
+# otam = {'ismi':'mirzali', 'tyil':1946,'viloyat':'toshkent'}
+# print(f"Otamning ismi ({otam['ismi'].title()}, {otam['tyil']} - yilda, {otam['viloyat'].title()} shahrida tug\'ilgan")
+# tyil = otam['tyil']
+# vil = otam['viloyat']
+# print(f"Otamning ismi {otam['ismi'].title()}, {tyil}-yilda, {vil.title()} viloyatida tug'ilgan")
+
+
+# ism = input("Otangizni ismini kiriting: ")
+# yil = input ("Otangizni tug'ilgan yilini kiriting: ")
+# vil = input ("Otangizni tug'ilgan viloyatini kiriting: ")
+# otam = {'ismi':'ism', 'tyil':yil,'viloyat':'vil'}
+# print(f"Otamning ismi {ism.title()}, {yil}-yilda, {vil.title()} shahrida tug'ilgan")
+
+# taomlar = {
+#     'ali':'osh',
+#     'vali':'shashlik',
+#     'hasan':"lag'mon",
+#     'husan':"mastava",
+#     'olim':"somsa"
+#     }
+#
+# taom = taomlar['ali']
+# print(f"Alining sevimli taomi {taom}")
+
+# python_izohli_lugati = {
+#     'integer':"Butun son",
+#     'float':"O'nlik son",
+#     'string':"Matn",
+#     'list':"Ro'yxat",
+#     'tuple':"O'zgarmas ro'yxat",
+#     'dictionary': "Lug'at"}
+#
+## print(python_izohli_lugati['tuple'])
+#
+# kalit = input("Kalit so'z kiriting:").lower()
+# tarjima = python_izohli_lugati.get(kalit)
+#
+# if tarjima==None:
+#     print('Bunday so\'z mavjud emas')
+# else:
+#     print(f"{kalit.title()} so\'zi {tarjima} deb tarjima qilinadi.")
+#
+# # print(python_izohli_lugati.get(kalit,"Bunday so'z mavjud emas"))
+#
+# # print(python_izohli_lugati.get(kalit, 'bunday ism mavjud emas.'.title()))
+
+
+# 15-python
+
+# talaba_0 = {
+#     'ism':'alijon',
+#     'familiya':'shamshiyev',
+#     'yosh':22,
+#     'fakultet':'matematika',
+#     'kurs':4
+#     }
+#
+# print(talaba_0.items())
+#
+# for kalit, qiymat in talaba_0.items():
+#     print(f'Kalit: {kalit}')
+#     print(f'Qiymat: {qiymat} \n')
+
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310'
+#     }
+#
+# for k, q in telefonlar.items():
+#     print(f"{k.title()}ning telefoni {q}")
+
+# mahsulotlar = { # Do'kondagi mahsulotlar
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000
+#     }
+#
+# # print(mahsulotlar.keys())
+#
+#
+# # print('Do\'kondagi mahsulotlar:')
+# # for mahsulot in mahsulotlar.keys():
+# #     print(mahsulot.title())
+#
+# bozorlik = ['anor','uzum','non','baliq']
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()} {mahsulotlar[mahsulot]} so'm")
+#
+# for buyum in bozorlik:
+#     if buyum not in mahsulotlar:
+#         print(f"Iltimos, do'koningizga {buyum} ham olib keling")
+
+# print("Do'konimizdagi mahsulotlar:")
+# for mahsulot in sorted(mahsulotlar):
+#     # print(mahsulot.title())
+#     print(f"{mahsulot.title()}: {mahsulotlar[mahsulot]} so'm")
+
+
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310',
+#     'hamida':'galaxy s9',
+#     'maryam':'huawei p30',
+#     'tohir':'iphone x',
+#     'umar':'iphone x'
+#     }
+#
+#
+# print(telefonlar.items())
+# print(telefonlar.keys())
+# print(telefonlar.values())
+#
+# print('Foydalanuvchilar quyidagi telefonlarni ishlatishadi:')
+# for tel in telefonlar.values():
+#     print(tel)
+# # for tel in telefonlar.keys():
+# #     print(tel)
+# # for tel in telefonlar.items():
+# #     print(tel)
+# print('Foydalanuvchilar quyidagi telefonlarni ishlatishadi:')
+# for tel in set(telefonlar.values()):
+#     print(tel)
+
+# python_words = {
+#     'integer':'Butun son',
+#     'float': "O'nlik son",
+#     'boolean':"Mantiqiy qiymat",
+#     'for':"Biror amalni qayta-qayta bajarish tsikli",
+#     'if':'Shartlarni tekshirish operatori'}
+#
+# for key, value in sorted(python_words.items()):
+#     print(f"{key.title()} - {value}")
+
+# davlatlar = {
+#     "o'zbekiston":'toshkent',
+#     'aqsh':'washington d.c.',
+#     'rossiya':'moskva',
+#     'tojikiston':'dushanbe',
+#     "qirg'iziston":'bishkek',
+#     'qozog\'iston':'nursulton',
+#     'malayziya':'kuala-lumpur',
+#     'singapur':'sungapur',
+#     'italiya':'rim'}
+
+# print('Dunyo davlatlari:')
+# for davlat in sorted(davlatlar):
+#     print(davlat.upper())
+#
+# print('\nDavlatlarning poytaxtlari')
+# for poytaxt in sorted(davlatlar.values()):
+#     print(poytaxt.title())
+# print('\n')
+# print('Davlatlar nomi')
+# for poytaxt in sorted(davlatlar.keys()):
+#     print(poytaxt.title())
+# print('\n')
+# print('Davlatlar nomi va poytaxtlari:')
+# for key, value in sorted(davlatlar.items()):
+#     print(f"{key.title()} - {value.title()}")
+
+
+# country = input('Qaysi davlatning poytaxtini bilishni istaysiz?:').lower()
+# capital = davlatlar.get(country)
+# if capital==None:
+#     print('Kechirasiz, bizda bu haqida ma\'lumot yo\'q')
+# else:
+#     print(f"{country.upper()}ning poytaxti {capital.title()} shahri")
+#
+# poytaxt = input('Qaysi poytaxtning davlatini bilishni istaysiz?: ').lower()
+# # Teskari qidirish
+# davlat = None
+# for kalit, qiymat in davlatlar.items():
+#     if qiymat.lower() == poytaxt:
+#         davlat = kalit
+#
+# if davlat is None:
+#     print("Kechirasiz, bizda bu haqida ma'lumot yo'q")
+# else:
+#     print(f"{poytaxt.title()} — {davlat.title()} davlatining poytaxti")
+
+
+
+# menu = {
+#         'osh':20000,
+#         "lag'mon":22000,
+#         'non':4000,
+#         'choy':5000,
+#         'shashlik':12000,
+#         'somsa':6000,
+#         'tabaka':15000
+#         }
+#
+# print('3 ta taom buyurtma bering.')
+# buyurtmalar = []
+# for n in range(3):
+#     buyurtmalar.append(input(f"{n+1}-taom:").lower())
+#
+# for buyurtma in buyurtmalar:
+#     if buyurtma in menu:
+#         print(f"{buyurtma.title()} {menu[buyurtma]} so'm")
+#     else:
+#         print(f"Kechirasiz, bizda {buyurtma} yo'q.")
+#
+
+# NESTING (16-Python)
+#
+# AMALIYOT
+# Adabiyot (ilm-fan, san'at, internet) olamidagi 4 ta mashxur shaxlar haqidagi ma'lumotlarni lug'at ko'rinishida saqlang. Lug'atlarni bitta ro'yxatga joylang, va har bir shaxs haqidagi ma'lumotni konsolga chiqaring.
+#
+# Yuqoridagi lug'atlarga har bir shaxsning mashxur asarlari ro'yxatini ham qo'shing. For tsikli yordamida muallifning ismi va uning asarlarini konsolga chiqaring.
+#
+# Oila a'zolaringiz (do'stlaringiz) dan 3 ta sevimli kino-seriali haqida so'rang. Do'stingiz ismi kalit, uning sevimli kinolarini esa ro'yxat ko'rinishida lug'artga saqlang. Natijani konsolga chiqaring.
+#
+# Davlatlar degan lug'at yarating, lug'at ichida bir nechta davlatlar haqida ma'lumotlarni lug'at ko'rinishida saqlang. Har bir davlat haqida ma'lumotni konsolga chiqaring.
+#
+# Yuqoridagi dasturga o'zgartirish kiriting: konsolga barcha davlatlarni emas, foydalanuvchi so'ragan davlat haqida ma'lumot bering. Agar davlat sizning lug'atingizda mavjud bo'lmasa, "Bizda bu davlat haqida ma'lumot yo'q" degan xabarni chiqaring.
+
+
+# Royhat ichida lug'at (1)
+
+# buxoriy = {'ism':'Abu Abdulloh Muhammad ibn Ismoil',
+#            'tyil':810,
+#            'vyil':870,
+#            'tjoy':'Buxoro'
+#            }
+#
+# qodiriy = {'ism':'Abdulla Qodiriy',
+#            'tyil':1894,
+#            'vyil':1938,
+#            'tjoy':'Toshkent'
+#            }
+#
+# vohidov = {'ism':'Erkin Vohidov',
+#            'tyil':1936,
+#            'vyil':2016,
+#            'tjoy':"Farg'ona"
+#            }
+#
+# navoiy = {'ism':'Alisher Navoiy',
+#            'tyil':1441,
+#            'vyil':1501,
+#            'tjoy':"Xirot"
+#            }
+#
+# shaxslar = [buxoriy, qodiriy, vohidov, navoiy]
+#
+# for shaxs in shaxslar:
+#     ism = shaxs['ism']
+#     tyil = shaxs['tyil']
+#     vyil = shaxs['vyil']
+#     tjoy = shaxs['tjoy']
+#     print(f"{ism} {tyil}-yilda {tjoy}da tavallud topgan. "
+#           f"{vyil-tyil} yil umr ko'rgan.")
+
+
+# Royhat ichida lug'at (2)
+
+
+# buxoriy = {'ism':'Abu Abdulloh Muhammad ibn Ismoil',
+#            'tyil':810,
+#            'vyil':870,
+#            'tjoy':'Buxoro',
+#            'asarlar':["Al-jome’ as-sahih", "Al-adab al-mufrad", "At-tarix al-kabir", "At-tarix as-sag‘ir"]
+#            }
+#
+# qodiriy = {'ism':'Abdulla Qodiriy',
+#            'tyil':1894,
+#            'vyil':1938,
+#            'tjoy':'Toshkent',
+#            'asarlar':["O'tkan kunlar","Mehrobdan Chayon",'Obid ketmon']
+#            }
+#
+# vohidov = {'ism':'Erkin Vohidov',
+#            'tyil':1936,
+#            'vyil':2016,
+#            'tjoy':"Farg'ona",
+#            'asarlar':["Tong nafasi","Qo'shiqlarim sizga","O'zbegim","Qiziquvchan Matmusa"]
+#            }
+#
+# navoiy = {'ism':'Alisher Navoiy',
+#            'tyil':1441,
+#            'vyil':1501,
+#            'tjoy':"Xirot",
+#            'asarlar':["Xamsa","Lison ut-Tayr","Mahbub Al-Qulub",'Munojot']
+#            }
+#
+# shaxslar = [buxoriy, qodiriy, vohidov, navoiy]
+#
+# for shaxs in shaxslar:
+#     ism = shaxs['ism']
+#     asarlar = shaxs['asarlar']
+#     print(f"\n{ism} ning mashxur asarlari: ")
+#     for asar in asarlar:
+#         print(asar)
+
+
+# Lug'at ichida ro'yhat
+
+
+# kinolar = {
+#     'ali':['Terminator','Rambo','Titanic'],
+#     'vali':['Tenet','Inception','Interstellar'],
+#     'hasan':['Abdullajon','Bomba','Shaytanat'],
+#     'husan':['Mahallada duv-duv gap','John Wick']
+#     }
+#
+# for ism, kinolar in kinolar.items():
+#     print(f"\n{ism.title()}ning sevimli kinolari:")
+#     for kino in kinolar:
+#         print(kino)
+
+
+
+
+# davlatlar = {
+#     "o'zbekiston":{'poytaxt':"toshkent",
+#                    'maydon':448978,
+#                    'aholi':33_000_000,
+#                    'pul birligi':"so'm"
+#                    },
+#     "rossiya":{'poytaxt':"moskva",
+#                    'maydon':17_098_246,
+#                    'aholi':144_000_000,
+#                    'pul birligi':"rubl"
+#                    },
+#     "aqsh":{'poytaxt':"vashington",
+#                    'maydon':9_631_418,
+#                    'aholi':327_000_000,
+#                    'pul birligi':"dollar"},
+#     "malayziya":{'poytaxt':"kuala-lumpur",
+#                    'maydon':329750,
+#                    'aholi':25_000_000,
+#                    'pul birligi':"rinngit"}
+#     }
+#
+# for key, value in davlatlar.items():
+#     if key.lower()=='aqsh':
+#         davlat = key.upper()
+#     else:
+#         davlat = key.capitalize()
+#     print(f"\n{davlat}ning poytaxti {value['poytaxt'].title()}"
+#           f"\nHududi: {value['maydon']} kv.km"
+#           f"\nAholisi: {value['aholi']}"
+#           f"\nPul birligi: {value['pul birligi']}")
+
+
+# lug'at ichida lug'at
+
+#
+# davlatlar = {
+#     "o'zbekiston":{'poytaxt':"toshkent",
+#                    'maydon':448978,
+#                    'aholi':33_000_000,
+#                    'pul birligi':"so'm"
+#                    },
+#     "rossiya":{'poytaxt':"moskva",
+#                    'maydon':17_098_246,
+#                    'aholi':144_000_000,
+#                    'pul birligi':"rubl"
+#                    },
+#     "aqsh":{'poytaxt':"vashington",
+#                    'maydon':9_631_418,
+#                    'aholi':327_000_000,
+#                    'pul birligi':"dollar"},
+#     "malayziya":{'poytaxt':"kuala-lumpur",
+#                    'maydon':329750,
+#                    'aholi':25_000_000,
+#                    'pul birligi':"rinngit"}
+#     }
+#
+# davlat = input('Davlat nomini kiriting: ').lower()
+# if davlat in davlatlar:
+#     info = davlatlar[davlat]
+#     print(f"\n{davlat.capitalize()}ning poytaxti {info['poytaxt'].title()}"
+#           f"\nHududi: {info['maydon']} kv.km"
+#           f"\nAholisi: {info['aholi']}"
+#           f"\nPul birligi: {info['pul birligi']}")
+# else:
+#     print("Bizda bu davlat haqida ma'lumot mavjud emas")
+
+
+
